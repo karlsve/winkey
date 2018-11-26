@@ -12,7 +12,7 @@ parser.add_argument('--key', metavar='key', type=str, help='The key to convert, 
 args = parser.parse_args()
 if args.mode == 'i':
     key = args.i
-else if args.mode == 'fs':
+elif args.mode == 'fs':
     from Registry import Registry
     path = args.path + '/Windows/System32/config/RegBack/SOFTWARE' # > Win7
     # path = args.path + 'Windows/system32/config/software' # <= Win7
